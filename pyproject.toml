@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "retail-merch-scheduler"
+version = "0.1.0"
+description = "Field-merchandising planner: weekly visit schedules by store tier with spacing, hours and skills constraints, route optimisation (nearest-neighbour + 2-opt), geofenced check-ins, visit compliance and on-shelf availability reporting."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Admire T. Ndaneta" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.11"]
+
+[project.scripts]
+merch = "merch.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/merch"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+packages = ["merch"]
+
+[tool.coverage.run]
+source = ["merch"]
+branch = true
