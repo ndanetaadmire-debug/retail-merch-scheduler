@@ -1,0 +1,11 @@
+[
+  {"id": "pnp-sandton", "name": "Pick n Pay Sandton City", "location": [-26.1076, 28.0567], "tier": "A", "needs_skill": "promo_build"},
+  {"id": "chk-rosebank", "name": "Checkers Rosebank", "location": [-26.1452, 28.0420], "tier": "A"},
+  {"id": "spar-melville", "name": "Spar Melville", "location": [-26.1771, 28.0090], "tier": "B"},
+  {"id": "ww-hyde", "name": "Woolworths Hyde Park", "location": [-26.1253, 28.0336], "tier": "B"},
+  {"id": "shoprite-soweto", "name": "Shoprite Maponya Mall", "location": [-26.2575, 27.9036], "tier": "A"},
+  {"id": "boxer-randburg", "name": "Boxer Randburg", "location": [-26.0937, 27.9993], "tier": "C"},
+  {"id": "pnp-fourways", "name": "Pick n Pay Fourways", "location": [-26.0181, 28.0087], "tier": "B"},
+  {"id": "chk-midrand", "name": "Checkers Midrand", "location": [-25.9960, 28.1288], "tier": "C", "open_days": ["Mon", "Wed", "Fri"]},
+  {"id": "spar-killarney", "name": "Spar Killarney", "location": [-26.1626, 28.0546], "tier": "C"}
+]
